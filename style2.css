@@ -1,0 +1,41 @@
+body{
+  background-color: antiquewhite;
+}
+.head{
+  box-sizing: border-box;
+  background-color: hsl(120, 94%, 12%);
+  padding: 10px;
+  color: aliceblue;
+}
+
+li{
+  display: inline;
+  list-style-type: none;
+  justify-content: left;
+}
+
+
+h2{
+  justify-content: center;
+  display: flex;
+}
+.cycle{
+  box-sizing: border-box;
+  background-color:hsl(120, 94%, 12%); 
+  color: aliceblue;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 90px;
+  justify-content: space-between;
+  display: inline-block;
+  margin-top: 100px;
+ 
+}
+p{
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+  margin-top: 30px;
+}

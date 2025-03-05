@@ -1,0 +1,63 @@
+body{
+  background-color: bisque;
+  margin: 0;
+}
+.me{
+  background-color: rgb(163, 75, 3);
+  height: 600vr;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  border-radius: 0 0 35px 35px;
+  display: flex;
+  justify-content: center;
+}
+li{
+  list-style-type: none;
+  display: inline;
+  
+  
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  align-items: left;
+  flex-direction: row;
+  
+}
+a{
+  color: honeydew;
+}
+
+
+.grid-container {
+  display: grid;
+  height: 800px;
+  width: 800px;
+  gap: 10px;
+  background-color: #074f8a;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 50px;
+
+
+}
+
+.item  {
+  background-color: rgba(160, 202, 197, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+

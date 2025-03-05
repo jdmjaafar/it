@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(189, 189, 201);
+}
+.me{
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20em;
+  width: 50em;
+  margin: 0;
+  gap: 10px;
+}
+p{
+  background-color: red;
+  margin-top: 0;
+}
+
+.he{
+  background-color: red;
+}
+.him{
+  background-color: blue;
+}
+.y{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6px;
+  height: 200px;
+  column-gap: 6px;
+}
+.him1{
+  display: block;
+  background-color: blue;
+  height: 100px;
+
+
+}
+.him2{
+  display: inline;
+  background-color: rgb(6, 6, 80);
+ color: aliceblue;
+
+}
+.i{
+  background-color: black;
+  width: 50%;
+color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    img{
+      max-width: 100%;
+      display: block;
+     /*  height: auto; */
+    }
+    body{
+     font: 1.4em "Helvetica Neue",;
+      display: flex;
+      flex-direction: column;
+      text-transform: capitalize;
+      min-height: 100vh;
+      background-image: radial-gradient(rgb(124, 111, 78),rgb(221, 108, 108));
+      background-color: blue;
+    }
+    header, footer{
+      background-color: darkgreen;
+      position: sticky;
+      height: 4rem;
+      color: aliceblue;
+     text-align: center;
+    }
+    nav{
+      background-color: rgb(0, 255, 183);
+      display: flex;
+      justify-content: space-evenly;
+      padding: 6px;
+
+    }
+    nav a,nav:visited{
+  color: #000;
+}
+
+nav a:hover,nav a:focus{
+  color: hsla(0, 0%, 20%, 0.6);
+}
+    header{
+      top: 0;
+    }
+    main{
+      background-color: rgb(250, 243, 166);
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      align-items: center;
+      gap: 1em;
+      flex-grow: 1;
+
+    }
+    .card{
+      background-color: rgb(4, 144, 11);
+      padding: 6px;
+      border: 3px solid  rgb(195, 202, 11);
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: min(100%),350px;
+      scroll-margin-top: 8rem;
+    }
+    .card figcaption{
+      text-align: center;
+      font-size: 2rem;
+      color: aliceblue;
+      margin: 1rem;
+    }
+    .card img{
+    border: 5px double #333;
+    border-radius: 50%;
+  }
+    .card figure{
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    footer{
+      bottom: 0;
+       height: auto;
+      padding: 2px;
+    }
+    @media screen and (min-width: 500px){
+   main{
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+   }
+   .card{
+    width: min (100%,300px);
+   }
+   .card:last-child{
+    order: -1;
+   }
+  }
+
+  @media screen and (min-width: 768px){
+    nav{
+      display: none;
+    }
+    .card{
+      width: min(100% 290px);
+    }
+    .card figure{
+      flex-flow: column-reverse;
+    }
+    .card figcaption{
+      margin: 0.1em;
+    }
+    .card p{
+      margin-top: 1rem;
+    }
+  }
+  @media screen and (min-width: 992px){
+    .card{
+      width: min(100% 3000px);
+      
+    }
+    .card:nth-child(2){
+      order: -1;
+    }
+
+  }
+  @media screen and (min-width: 1200px){
+   .card{
+    width: min(calc(33% - 1rem)500px);
+   }
+
+  }
+  @media screen and (max-height: 425px)and (min-aspect-ratio: 7/4){
+    body{
+      background-color: rgb(236, 244, 146);
+      background-image: radial-gradient(#3d71be,rgb(162, 100, 0));
+    }
+h1,h2{
+  font-size: 1.5rem;
+}
+nav{
+  display: none;
+}
+  }
+  </style>
+</head>
+<body>
+  <body>
+    <header>
+      <h1>miu it student</h1>
+      <nav>
+        <a href="#profile1">jaafar</a>
+        <a href="#profile2">maryam</a>
+        <a href="#profile3">shinkafi</a>
+     
+      </nav>
+    </header>
+    <main>
+      <article id="profile1" class="card">
+        <figure>
+          <img src="./img/Snapchat-1317873928.jpg" alt="jaafar" height="500" width="500">
+          <figcaption>Jaafar</figcaption>
+        </figure>
+        <p><q>jaafar things</q></p>
+      </article>
+      <article id="profile2" class="card">
+        <figure>
+          <img src="./img/IMG-20240627-WA0093.jpg" alt="maryam" height="500" width="500">
+          <figcaption>maryam </figcaption>
+        </figure>
+        <p><q>maryam things</q></p>
+      </article>
+      <article id="profile3" class="card">
+        <figure>
+          <img src="./img/IMG_0286.JPG" alt="shinkafi" height="500" width="500">
+          <figcaption>shinkafi</figcaption>
+        </figure>
+        <p><q>shinkafi things</q></p>
+      </article>
+    
+    </main>
+    <footer>
+    <p>&copy; jdm enterprise</p>
+    </footer>
+  </body>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 1000px;
+    }
+    .box{
+      border: 2px dashed;
+    height: 800px;
+  width: 300px;
+ }
+  .relative{
+    border: 1px dashed;
+    height: 450px;
+    width: 200px;
+   position: relative;
+   top: 20px;
+   left: 20px;
+  
+  }
+  .absolute{
+    border: 1px dashed;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+  }
+  .a{
+    border: 1px dashed;
+    height: 100px;
+    width: 100px;
+    position: sticky;
+
+  }
+  .it{
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="relative">p
+      <div class="absolute">box</div>
+      <div class="a">red</div>
+    </div>
+   
+  </div>
+  <div class="van">
+    <img src="./2.jpeg" alt="backgroung">
+    <p class="it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus quia delectus dolorem. Consectetur vero dolores vitae quos ipsum earum, autem tempore rerum, rem sunt ad cum amet fugiat assumenda!</p>
+  </div>
+</body>
+</html>
